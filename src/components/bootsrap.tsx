@@ -1,2 +1,2 @@
 "use client";
-export  {Container,SSRProvider,Alert,Spinner} from "react-bootstrap";
+export  {Container,Alert,Spinner} from "react-bootstrap";
