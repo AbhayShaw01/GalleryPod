@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GalleryPod : Next.js Image Demonstration
 
-## Getting Started
+This project showcases various features of Next.js by loading images to demonstrate different rendering methods and functionalities. Below are the key features highlighted:
 
-First, run the development server:
+## Features Demonstrated:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Static and Dynamic Server-Side Rendering:**
+   - Utilizing Next.js's server-side rendering capabilities to render images statically or dynamically based on the content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Incremental Static Regeneration:**
+   - Demonstrating Next.js's ISR feature to regenerate static pages incrementally, ensuring up-to-date content without sacrificing performance.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Client-Side Rendering:**
+   - Showcasing client-side rendering to dynamically load images without full-page reloads, enhancing user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. **Router Handlers (API End-points):**
+   - Implementing router handlers to create API endpoints for fetching and manipulating image data.
 
-## Learn More
+## How to Use:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Installation:**
+   - Clone this repository to your local machine.
+   - Navigate to the project directory and run `npm install` to install dependencies.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Development:**
+   - Run `npm run dev` to start the development server.
+   - Access the application at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Building:**
+   - Use `npm run build` to build the production-ready application.
+   - Run `npm start` to start the production build.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
