@@ -2,8 +2,9 @@
 import { UnsplashImg, UnsplashSearchResponse } from "@/models/unsplash-image";
 import Image from "next/image";
 import React, { FormEvent, useState } from "react";
-import { Button, Form, Spinner } from "react-bootstrap";
+import { Alert, Button, Form, Spinner } from "react-bootstrap";
 import styles from "./SearchPage.module.css";
+
 
 export default function SearchPage() {
   const [loading, setLoading] = useState(false);
@@ -37,6 +38,9 @@ export default function SearchPage() {
   }
   return (
     <div>
+      <Alert>
+      This page  fetches data <strong>client-side</strong>.To prevent Api credentials leak, the request is sent to NextJS route that runs on server. This route handler then fetches data from api and returns it to client.
+      </Alert>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="search-input">
           <Form.Label>SearchInput</Form.Label>
