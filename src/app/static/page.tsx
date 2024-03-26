@@ -2,6 +2,7 @@ import Image from "next/image";
 import {Alert} from "@/components/bootsrap";
 import type {Metadata} from "next";
 import {UnsplashImg} from "@/models/unsplash-image";
+import { title } from "process";
 
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ export default async function UnsplashImage(){
             This page <strong>fetches and catches data at build time.</strong> Even though Unsplash API always return new Image we see same image even after refresh until the project is compiled again.
             </Alert>
             <Image src={image.urls.raw} alt={image.description} width={width} height={height} className="rounded shadow mw-100 h-100"/>
+            
+            <p>Created by :- {image.user.username}</p>
 
         </div>
 

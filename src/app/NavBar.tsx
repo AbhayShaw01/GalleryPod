@@ -14,6 +14,7 @@ export default function NavBar(){
             <Navbar.Collapse id="main-navbar">
             <Nav>
               <Nav.Link as={Link} href="/static" active={pathName==="/static"}>Static</Nav.Link>
+              <Nav.Link as={Link} href="/dynamic" active={pathName==="/dynamic"}>Dynamic</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
